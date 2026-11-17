@@ -11,7 +11,7 @@ const projects = [
       "Сайт кофейни с акцентом на визуальную подачу заведения и его ассортимента. Проект объединяет тематический дизайн, структуру презентационного сайта и интерактивные элементы.",
     focus: ["Презентация заведения", "Каталог ассортимента", "Интерфейс"],
     stack: ["HTML", "CSS", "JavaScript"],
-    image: "/coffe.png", 
+    image: `${import.meta.env.BASE_URL}coffe.png`,
     imageAlt: "Превью сайта Coffee Website",
     demo: "https://fogimanfg.github.io/Coffe-Website-/",
     github: "https://github.com/FogimanFG/Coffe-Website-",
@@ -25,7 +25,7 @@ const projects = [
       "Веб-проект музыкального плеера. Здесь основной акцент сделан на интерфейсе приложения и взаимодействии пользователя с музыкальным контентом.",
     focus: ["Музыкальный интерфейс", "Интерактивность", "JavaScript"],
     stack: ["HTML", "CSS", "JavaScript"],
-    image: "/musik.png", 
+    image: `${import.meta.env.BASE_URL}musik.png`,
     imageAlt: "Превью проекта Music Player",
     demo: "https://fogimanfg.github.io/Music/",
     github: "https://github.com/FogimanFG/Music",
@@ -39,7 +39,7 @@ const projects = [
       "Тематический веб-сайт, посвящённый бассейнам. Работа над структурой страницы, визуальной подачей информации и оформлением тематического веб-интерфейса.",
     focus: ["Тематическая подача", "Структура сайта", "Веб-дизайн"],
     stack: ["HTML", "CSS", "JavaScript"],
-    image: "/acva.png",
+    image: `${import.meta.env.BASE_URL}acva.png`,
     imageAlt: "Превью проекта Swimming Pools",
     demo: "https://fogimanfg.github.io/Swimming-Pools-Website-/",
     github: "https://github.com/FogimanFG/Swimming-Pools-Website-",
@@ -145,7 +145,7 @@ function App() {
               <div className="art-ring art-ring-inner" />
               
               <div className="art-monogram">
-                <img src="/avatar.webp" alt="Роман" />
+                <img src={`${import.meta.env.BASE_URL}avatar.webp`} alt="Роман" />
               </div>
               
               <span className="art-coordinate art-coordinate-left">45°02' N</span>
